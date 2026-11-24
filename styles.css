@@ -119,9 +119,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-
-#tile {
     background-image: url(./images/hylia_f_1791370186_4002625339405150278_68277607406.heic);
     min-width: 80%;
     height: 350px;

@@ -29,13 +29,36 @@
             </div>
 
             <div class="mainButton">
-                <a class="tile" id="tile" href="http://hyliafawkes.com/hylia_F_IG/deep.html" target="_blank" rel="noopener noreferrer">
-                    <h2>Yours to claim 🖤</h2>
+                <a class="tile" id="defaultButton" href="http://hyliafawkes.com/hylia_F_IG/deep.html" target="_blank" rel="noopener noreferrer">
+                    <h2>Yours to claim 💋</h2>
+                </a>
+            </div>
+
+            <div class="mainButton">
+                <a class="tile" id="promoButton" href="http://hyliafawkes.com/deeptrial.html" target="_blank" rel="noopener noreferrer">
+                    <h2>A Gift For You 💞</h2>
                 </a>
             </div>
         </div>
     </div>
 
 <script src="../overlay.js" defer></script>
+
+<script>
+    const promoEnd = new Date("2026-11-29T23:59:59-05:00");
+
+    const now = new Date();
+
+    const defaultButton = document.getElementById("defaultButton");
+    const promoButton = document.getElementById("promoButton");
+
+    if (now <= promoEnd) {
+        defaultButton.style.display = "none";
+        promoButton.style.display = "flex";
+    } else {
+        defaultButton.style.display = "flex";
+        promoButton.style.display = "none";
+    }
+</script>
 </body>
 </html>
